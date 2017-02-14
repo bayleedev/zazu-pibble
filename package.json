@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Get moar pibbles",
   "main": "download.js",
+  "scripts": {
+    "test": "mocha ./test"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/blainesch/zazu-pibble.git"
@@ -15,5 +18,9 @@
   "homepage": "https://github.com/blainesch/zazu-pibble#readme",
   "dependencies": {
     "node-fetch": "^1.6.3"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
   }
 }
