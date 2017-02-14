@@ -1,27 +1,21 @@
 {
   "name": "zazu-pibble",
   "description": "Get moar pibbles",
+  "stylesheet": "./dist/style.css",
   "blocks": {
     "input": [
       {
         "id": "pibble",
-        "type": "Keyword",
-        "keyword": "pibble",
-        "title": "Can i haz pibble?!",
-        "icon": "fa-camera",
-        "connections": ["Download"]
+        "type": "RootScript",
+        "script": "pibble.js",
+        "connections": ["Open"]
       }
     ],
     "output": [
       {
-        "id": "Download",
-        "type": "UserScript",
-        "script": "download.js",
-        "connections": ["Open"]
-      },
-      {
         "id": "Open",
-        "type": "OpenFile"
+        "type": "OpenInBrowser",
+        "url": "{value}"
       }
     ]
   }
