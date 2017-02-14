@@ -16,6 +16,7 @@ module.exports = (pluginContext) => {
           return Math.floor(Math.random() * 2) || -1 // Randomize Sort
         }).map((post) => {
           return {
+            id: post.id,
             icon: 'fa-camera',
             title: 'Can i haz pibble!?',
             subtitle: post.summary,
